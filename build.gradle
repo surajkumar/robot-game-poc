@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group = 'game'
-version = '1.0-SNAPSHOT'
+group = 'io.github.surajkumar'
+version = '1.0'
 
 repositories {
     mavenCentral()
