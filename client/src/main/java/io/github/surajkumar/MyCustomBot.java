@@ -5,11 +5,17 @@ import io.github.surajkumar.client.game.PlayerControls;
 
 import java.awt.*;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class MyCustomBot extends Bot {
     @Override
     public void performAction(Player player, PlayerControls controls, List<Player> players) {
 
+        controls.moveTo(ThreadLocalRandom.current().nextInt(800), ThreadLocalRandom.current().nextInt(600));
+        controls.shoot();
+        controls.shoot();
+        controls.shoot();
+        controls.shoot();
     }
 
     @Override

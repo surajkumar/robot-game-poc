@@ -19,10 +19,6 @@ public class PlayerControls implements Runnable {
     }
 
     public void moveTo(int targetX, int targetY) {
-        if(targetX <= 0 || targetY <= 0 || targetX >= 1000 || targetY >= 700 || player.isWalking()) {
-            System.out.println("Out of bounds");
-            return;
-        }
         player.setTarget(new Location(targetX, targetY, 0));
         Buffer buffer = Buffer.buffer();
         buffer.appendInt(1);

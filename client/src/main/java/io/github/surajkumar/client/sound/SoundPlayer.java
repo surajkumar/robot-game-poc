@@ -20,7 +20,7 @@ public class SoundPlayer implements LineListener {
     private long start = 0;
 
     public void playSoundEffect() {
-        if ((System.currentTimeMillis() - start) > 500) {
+        if ((System.currentTimeMillis() - start) > 1000) {
             start = System.currentTimeMillis();
             Clip audioClip;
             try {
